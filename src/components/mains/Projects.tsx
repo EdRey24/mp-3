@@ -1,4 +1,6 @@
 import {useState} from "react";
+import {ContentContainer, Heading3, Main} from "./Mains.styles.ts";
+import {CalcButton, CalcContainer, CalcInput, CalcLabel, CalcOutput, Heading2, ProjectLink} from "./Projects.styles.ts";
 
 export default function Projects(){
     const [input1, setInput1] = useState("");
@@ -26,15 +28,17 @@ export default function Projects(){
                 break;
             default:
                 setOutput(0);
+                setInput1("");
+                setInput2("");
                 break;
         }
     }
 
     return (
-        <main>
-            <div className="content-container">
-                <h3><a href="https://github.com/GoogleCloudPlatform/cloud-run-mcp" target="_blank">Google Cloud Run MCP
-                    Server</a> | JavaScript, Google Cloud, Docker, Gemini AI, MCP</h3>
+        <Main>
+            <ContentContainer>
+                <Heading3><ProjectLink to="https://github.com/GoogleCloudPlatform/cloud-run-mcp" target="_blank">Google Cloud Run MCP
+                    Server</ProjectLink> | JavaScript, Google Cloud, Docker, Gemini AI, MCP</Heading3>
                 <ul>
                     <li>Streamlined server configuration by implementing environment variable-based defaults, improving
                         developer efficiency.
@@ -43,9 +47,9 @@ export default function Projects(){
                         authentication verification, minimizing manual credential management.
                     </li>
                 </ul>
-            </div>
-            <div className="content-container">
-                <h3>CLI Wordle + AI | Python</h3>
+            </ContentContainer>
+            <ContentContainer>
+                <Heading3>CLI Wordle + AI | Python</Heading3>
                 <ul>
                     <li>Developed a CLI-based Wordle game in Python, featuring a curated 12,000+ word dictionary and a
                         real-time visual feedback system utilizing three distinct color indicators (green, yellow, grey)
@@ -56,10 +60,10 @@ export default function Projects(){
                         50 milliseconds.
                     </li>
                 </ul>
-            </div>
-            <div className="content-container">
-                <h3><a href="https://github.com/EdRey24/CashAlert" target="_blank">Cash Alert</a> | Google App Script,
-                    HTML, Google Sheets, Gmail</h3>
+            </ContentContainer>
+            <ContentContainer>
+                <Heading3><ProjectLink to="https://github.com/EdRey24/CashAlert" target="_blank">Cash Alert</ProjectLink> | Google App Script,
+                    HTML, Google Sheets, Gmail</Heading3>
                 <ul>
                     <li>Designed a free solution for organizing school/community fundraisers through Google App Script,
                         HTML, Google Sheets, and Gmail.
@@ -68,30 +72,32 @@ export default function Projects(){
                         limitations of costly and restrictive alternatives.
                     </li>
                 </ul>
-            </div>
+            </ContentContainer>
 
-            <div id="calc-container" className="content-container">
-                <h2>Edward's Calculator</h2>
-                <label htmlFor="first-num">Enter first number</label>
-                <input type="text"
-                       id="first-num"
-                       value={input1}
-                       onChange={(e) => {setInput1(e.target.value)}}
-                />
-                <label htmlFor="second-num">Enter second number</label>
-                <input type="text"
-                       id="second-num"
-                       value={input2}
-                       onChange={(e) => {setInput2(e.target.value)}}
-                />
-                <button onClick={() => operation("+")}>+</button>
-                <button onClick={() => operation("-")}>-</button>
-                <button onClick={() => operation("*")}>*</button>
-                <button onClick={() => operation("/")}>/</button>
-                <button onClick={() => operation("**")}>**</button>
-                <button onClick={() => operation("clear")}>Clear</button>
-                <h3 id="output">{output}</h3>
-            </div>
-        </main>
+            <ContentContainer>
+                <CalcContainer>
+                    <Heading2>Edward's Calculator</Heading2>
+                    <CalcLabel htmlFor="first-num">Enter first number</CalcLabel>
+                    <CalcInput type="text"
+                           id="first-num"
+                           value={input1}
+                           onChange={(e) => {setInput1(e.target.value)}}
+                    />
+                    <CalcLabel htmlFor="second-num">Enter second number</CalcLabel>
+                    <CalcInput type="text"
+                           id="second-num"
+                           value={input2}
+                           onChange={(e) => {setInput2(e.target.value)}}
+                    />
+                    <CalcButton onClick={() => operation("+")}>+</CalcButton>
+                    <CalcButton onClick={() => operation("-")}>-</CalcButton>
+                    <CalcButton onClick={() => operation("*")}>*</CalcButton>
+                    <CalcButton onClick={() => operation("/")}>/</CalcButton>
+                    <CalcButton onClick={() => operation("**")}>**</CalcButton>
+                    <CalcButton onClick={() => operation("clear")}>Clear</CalcButton>
+                    <CalcOutput>{output}</CalcOutput>
+                </CalcContainer>
+            </ContentContainer>
+        </Main>
     );
 }

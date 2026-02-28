@@ -1,15 +1,16 @@
+import {ContentContainer, Heading3, Main} from "./Mains.styles.ts";
 
 export default function Awards(){
     return (
-        <main>
-            <div className="content-container">
-                <h3>Boston University College of Arts & Sciences Dean's List</h3>
+        <Main>
+            <ContentContainer>
+                <Heading3>Boston University College of Arts & Sciences Dean's List</Heading3>
                 <p>Dean's List is an honor awarded to those CAS students who earned at least 15 academic units and had a
                     semester GPA of 3.5 or higher.</p>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h3>Boston University QuestBridge Scholarship</h3>
+            <ContentContainer>
+                <Heading3>Boston University QuestBridge Scholarship</Heading3>
                 <p>I have been selected as a Boston University QuestBridge Scholar. This prestigious honor reflects my
                     dedication to academic excellence and my commitment to making a positive impact in my community. The
                     QuestBridge program is renowned for connecting high-achieving, low-income students with top-tier
@@ -18,15 +19,15 @@ export default function Awards(){
                     connects me with a network of driven individuals and resources that will aid in my academic and
                     professional growth. I am deeply grateful for this opportunity and excited to contribute to the
                     vibrant Boston University community.</p>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h3>ScholarSHPE 2024-2025 Apple Scholarship Recipient</h3>
+            <ContentContainer>
+                <Heading3>ScholarSHPE 2024-2025 Apple Scholarship Recipient</Heading3>
                 <p>I was awarded a scholarship from Apple to help pay for school expenses.</p>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h3>VAMOS Scholarship</h3>
+            <ContentContainer>
+                <Heading3>VAMOS Scholarship</Heading3>
                 <p>I am honored to be a recipient of the Valley Alliance of Mentors for Opportunities and Scholarships
                     (VAMOS), a program dedicated to breaking barriers to higher education for students from the Rio
                     Grande Valley. Since its inception in 1996, VAMOS has been a transformative force, providing
@@ -37,10 +38,10 @@ export default function Awards(){
                     and mentorship. The VAMOS program’s commitment to education as a means of unlocking potential and
                     breaking the cycle of poverty is truly inspiring. I am deeply grateful for this opportunity and am
                     excited to contribute to the legacy of excellence and leadership that VAMOS fosters.</p>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h3>Hispanic Scholarship Fund</h3>
+            <ContentContainer>
+                <Heading3>Hispanic Scholarship Fund</Heading3>
                 <p>I am honored to have been selected as a Hispanic Scholarship Fund Scholar. This prestigious
                     recognition not only acknowledges my academic achievements but also supports my commitment to
                     leadership and community engagement. The Hispanic Scholarship Fund (HSF) is dedicated to empowering
@@ -49,10 +50,10 @@ export default function Awards(){
                     testament to my dedication and perseverance, and I am grateful for the opportunities this
                     scholarship provides as I continue to strive for excellence in my academic and professional
                     endeavors.</p>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h3>2023 Congressional App Challenge Winner for the 15th Congressional District of Texas</h3>
+            <ContentContainer>
+                <Heading3>2023 Congressional App Challenge Winner for the 15th Congressional District of Texas</Heading3>
                 <p>I participated in the Congressional App Challenge (CAC), an annual district-specific competition
                     aimed at inspiring innovation in STEM, coding, and computer science education. The CAC, initiated by
                     the Congressional Internet Caucus and supported by the Internet Education Foundation, provides
@@ -67,7 +68,7 @@ export default function Awards(){
                     advancing technology and education. The CAC’s mission to inspire, include, and innovate aligns with
                     my commitment to pursuing excellence in STEM fields, and I am proud to have contributed to this
                     impactful initiative.</p>
-            </div>
-        </main>
+            </ContentContainer>
+        </Main>
     );
 }

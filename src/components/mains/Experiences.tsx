@@ -1,12 +1,13 @@
+import {ContentContainer, Heading2, Heading3, Heading4, Main} from "./Mains.styles.ts";
 
 export default function Experiences(){
     return (
-        <main>
-            <div className="content-container">
-                <h2>Boston University</h2>
-                <h3>Learning & Event Technology Services (LETS) IT Support Specialist</h3>
-                <h4>Sep 2024 - Present</h4>
-                <h4>Boston, MA</h4>
+        <Main>
+            <ContentContainer>
+                <Heading2>Boston University</Heading2>
+                <Heading3>Learning & Event Technology Services (LETS) IT Support Specialist</Heading3>
+                <Heading4>Sep 2024 - Present</Heading4>
+                <Heading4>Boston, MA</Heading4>
                 <ul>
                     <li>Deliver exceptional on-site AV/IT support for 100+ classrooms across Boston University’s 17
                         schools and colleges.
@@ -15,13 +16,13 @@ export default function Experiences(){
                         classes.
                     </li>
                 </ul>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h2>Google</h2>
-                <h3>Associate Software Developer Intern</h3>
-                <h4>May 2025 - Aug 2025</h4>
-                <h4>Seattle, WA</h4>
+            <ContentContainer>
+                <Heading2>Google</Heading2>
+                <Heading3>Associate Software Developer Intern</Heading3>
+                <Heading4>May 2025 - Aug 2025</Heading4>
+                <Heading4>Seattle, WA</Heading4>
                 <ul>
                     <li>Spearheaded deployment and configuration of Model Context Protocol (MCP) Servers on Google Cloud
                         Run, expanding access to critical public and internal Google Cloud resources (e.g., BigQuery).
@@ -34,13 +35,13 @@ export default function Experiences(){
                         stability and security.
                     </li>
                 </ul>
-            </div>
+            </ContentContainer>
 
-            <div className="content-container">
-                <h2>Jane Street</h2>
-                <h3>Academy of Math and Programming Student</h3>
-                <h4>June 2024 - Aug 2024</h4>
-                <h4>New York City, NY</h4>
+            <ContentContainer>
+                <Heading2>Jane Street</Heading2>
+                <Heading3>Academy of Math and Programming Student</Heading3>
+                <Heading4>June 2024 - Aug 2024</Heading4>
+                <Heading4>New York City, NY</Heading4>
                 <ul>
                     <li>Mastered advanced mathematics, computer programming, data analysis, and game theory as a student
                         of the Academy of Math and Programming (AMP) through a rigorous and interactive STEM curriculum.
@@ -52,7 +53,7 @@ export default function Experiences(){
                         applicants.
                     </li>
                 </ul>
-            </div>
-        </main>
+            </ContentContainer>
+        </Main>
     );
 }

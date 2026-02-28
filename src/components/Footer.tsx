@@ -1,9 +1,10 @@
-import {Link} from "react-router";
+import {CreditsLink, Footerr} from "./Footer.styles.ts";
+
 
 export default function Footer(){
     return(
-        <footer>
-            <h3 id="credits">All rights reserved &#169; <Link to={``}>Credits</Link></h3>
-        </footer>
+        <Footerr>
+            <h3 id="credits">All rights reserved &#169; <CreditsLink to={``}>Credits</CreditsLink></h3>
+        </Footerr>
     );
 }

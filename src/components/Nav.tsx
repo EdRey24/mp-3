@@ -1,16 +1,18 @@
-import {Link} from "react-router";
+import {NavLi, NavLink, NavUl, Navv} from "./Nav.styles.ts"
+
 
 export default function Nav(){
     return(
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/experiences.html">Experiences</Link></li>
-                <li><Link to="/education.html">Education</Link></li>
-                <li><Link to="/projects.html">Projects</Link></li>
-                <li><Link to="/awards.html">Awards</Link></li>
-                <li><Link to="/leadership.html">Leadership</Link></li>
-            </ul>
-        </nav>
+        <Navv>
+            <NavUl>
+                <NavLi><NavLink to="/">Home</NavLink></NavLi>
+                <NavLi><NavLink to="/experiences.html">Experiences</NavLink></NavLi>
+                <NavLi><NavLink to="/education.html">Education</NavLink></NavLi>
+                <NavLi><NavLink to="/projects.html">Projects</NavLink></NavLi>
+                <NavLi><NavLink to="/awards.html">Awards</NavLink></NavLi>
+                <NavLi><NavLink to="/leadership.html">Leadership</NavLink></NavLi>
+            </NavUl>
+        </Navv>
+
     );
 }

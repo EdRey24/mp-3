@@ -8,11 +8,22 @@ import Experiences from "./components/mains/Experiences.tsx";
 import Awards from "./components/mains/Awards.tsx";
 import Leadership from "./components/mains/Leadership.tsx";
 import Projects from "./components/mains/Projects.tsx";
+import {createGlobalStyle} from "styled-components";
+import {Container, PageWrapper} from "./App.styles.ts";
+
+const GlobalStyle= createGlobalStyle`
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+`;
 
 function Root(){
   return(
       <>
+        <PageWrapper>
         <Header/>
+        <Container>
         <Nav/>
         <Routes>
           <Route
@@ -40,7 +51,9 @@ function Root(){
               element = {<Leadership/>}
           />
         </Routes>
+        </Container>
         <Footer/>
+        </PageWrapper>
       </>
   );
 }
@@ -53,6 +66,7 @@ export default function App() {
 
   return (
     <>
+        <GlobalStyle/>
         <RouterProvider router={router}/>
     </>
   )
