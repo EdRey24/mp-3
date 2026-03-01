@@ -49,4 +49,5 @@ export const CalcOutput = styled.div`
 
 export const ProjectLink = styled(Link)`
   text-decoration: none;
+  color: #4A2B8C;
 `;
