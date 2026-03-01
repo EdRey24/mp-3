@@ -26,7 +26,7 @@ export const Main = styled.main`
 `;
 
 export const ContentContainer = styled.div`
-  margin: 3% 5% 3% 3%;
+  margin: 3% 5% 3% 0;
   padding: 2% 2%;
   background-color: #FFFFFF;
   border-left: 0.25vw solid #9D7BD8;
