@@ -1,5 +1,6 @@
 import {Bio, BioParagraph, Heading3, IntroParagraph, MainImage} from "./Home.styles.ts";
 import {Main} from "./Mains.styles.ts";
+import profile from "../../../public/profile.jpg"
 
 export default function Home(){
     return (
@@ -8,7 +9,7 @@ export default function Home(){
             <Heading3>Home</Heading3>
             <Bio>
                 {/*Two-column layout for profile-pic and career-object*/}
-                <MainImage src="../../../public/profile.jpg" alt="Edward Reyna"/>
+                <MainImage src={profile} alt="Edward Reyna"/>
                 <BioParagraph>
                     My name is Edward Reyna, and I am Sophomore at Boston University currently studying
                     Computer Science. I want to explore as many subtopics in the major as I possibly can.

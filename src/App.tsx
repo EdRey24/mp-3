@@ -31,23 +31,23 @@ function Root(){
             element = {<Home/>}
           />
           <Route
-              path = {"/experiences.html"}
+              path = {"/experiences"}
               element = {<Experiences/>}
           />
           <Route
-              path = {"/education.html"}
+              path = {"/education"}
               element = {<Education/>}
           />
           <Route
-              path = {"/projects.html"}
+              path = {"/projects"}
               element = {<Projects/>}
           />
           <Route
-              path = {"/awards.html"}
+              path = {"/awards"}
               element = {<Awards/>}
           />
           <Route
-              path = {"/leadership.html"}
+              path = {"/leadership"}
               element = {<Leadership/>}
           />
         </Routes>
