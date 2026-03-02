@@ -10,6 +10,7 @@ export default function Projects(){
     const operation = (op: string) => {
         const num1 = Number(input1);
         const num2 = Number(input2);
+        let outcome = 1;
         switch (op) {
             case "+":
                 setOutput(num1 + num2);
@@ -24,7 +25,10 @@ export default function Projects(){
                 setOutput(num1 / num2);
                 break;
             case "**":
-                setOutput(num1 ** num2);
+                for(let i = 0; i < num2; i++){
+                    outcome *= num1;
+                }
+                setOutput(outcome);
                 break;
             default:
                 setOutput(0);
