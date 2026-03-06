@@ -99,7 +99,7 @@ export default function Projects(){
                     <CalcButton onClick={() => operation("/")}>/</CalcButton>
                     <CalcButton onClick={() => operation("**")}>**</CalcButton>
                     <CalcButton onClick={() => operation("clear")}>Clear</CalcButton>
-                    <CalcOutput>{output}</CalcOutput>
+                    <CalcOutput theme={output < 0}>{output}</CalcOutput>
                 </CalcContainer>
             </ContentContainer>
         </Main>

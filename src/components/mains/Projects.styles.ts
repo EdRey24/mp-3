@@ -44,7 +44,7 @@ export const CalcOutput = styled.div`
   max-width: 50%;
   border-radius: 1.5vw;
   font-size: calc(2px + 2vw);
-  color: #FFF9F9; /* added for contrast, not in original but likely needed */
+  color: ${props => props.theme === true ? "red" : "#FFF9F9"};
 `;
 
 export const ProjectLink = styled(Link)`
